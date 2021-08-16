@@ -6,39 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhaskaracharya Maths Club</title>
+    <link rel = "icon" href = "Images/New_logo.png" type = "image/x-icon"">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2333b282c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-    <!-- Header Starts Here -->
-    <div class="topnav" id="myTopnav">
-        <a href="#" class="active1">Bhaskaracharya Maths Club</a>
-        <a href="#contact"><i class="fas fa-address-book"></i> Contact us</a>
-        <a href="#team"><i class="fas fa-user-friends"></i> Our Team</a>
-        <a href="#events"><i class="fas fa-calendar-alt"></i> Events</a>
-        <a href="#about"><i class="fas fa-info"></i> About us</a>
-        <a href="#notice-board"><i class="fas fa-chalkboard"></i> Notice Board</a>
-        <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <!-- Header Ends Here -->
-
-    <!-- College & Club Image Section Starts here -->
-    <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center image">
-        <a href="#"><img class="lg:w-6/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
-                src="Images/final sggs.png"></a>
-    </div>
-    <!-- College & Club Image Section Ends here -->
+    <!-- Navbar Starts Here -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bhaskaracharya Maths Club</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-box-open"></i> Questions Box
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="quiz1.html" target="_blank">Level 1</a>
+                  <a class="dropdown-item" href="quiz2.html" target="_blank">Level 2</a>
+                  <a class="dropdown-item" href="quiz3.html" target="_blank">Level 3</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#notice-board"><i class="fas fa-chalkboard"></i> Notice Board</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about"><i class="fas fa-info"></i> About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#events"><i class="fas fa-calendar-alt"></i> Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#team"><i class="fas fa-user-friends"></i> Our Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact"><i class="fas fa-address-book"></i> Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- Navbar Ends Here -->
 
     <!-- Home Section Starts Here -->
 
-    <div id="home" class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div id="home" class="px-4 py-16 mx-auto md:max-w-full md:px-24 lg:px-8 lg:py-20">
         <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
                 <a href="/" class="mb-6 sm:mx-auto">
@@ -89,10 +114,15 @@
                             class="fas fa-chalkboard"></i><br>Notice Board</h2>
                 </div>
                 <div class="flex flex-col w-full text-blueGray-500 lg:ml-4">
-                    <p class="mb-3 text-base leading-relaxed text-blueGray-500"> Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <p class="mb-3 text-base leading-relaxed text-blueGray-500"> 📌📌Hello folks📌📌<br>
+                        Greetings from team 📚 <b>BHASKARACHARYA MATHS CLUB</b> 📚<br>
+                        🏫📚 <b>Bhaskaracharya Maths Club</b> presents the Event <b>Questions Box</b> 🏫📚<br>
+                        🔰 So, mark your calendars 📅, the event is going to be conducted on 16 August 2021 at 5pm on the occasion of 75th Independence Day of India.<br>           
+                        Questions Box is a Maths Quiz but It's not a regular quiz, it's more exciting and creative apart from regular tests. Beat others by solving problems in less time to gain more points than others. 
+                        Gain experience of real time leaderboard. If you are a True Maths Lover don't miss the opportunity. 🎯<br>              
+                        <b>Syllabus:</b> 11th and 12th Mathematics 🏫📚<br>
+                        🔰 We have an exciting <b>CHALLENGE</b> for you all to show your skills and win <b>EXCITING CASH PRIZES</b> worth ₹1500/- in return. 🎯<br>
+                        For REGISTRATION <a href="https://forms.gle/w6yHB9NBaadd3Chm7" target="_blank"><b>Click Here</b></a>
                     </p>
                 </div>
             </div>
@@ -102,7 +132,7 @@
 
     <!-- About Section Starts here -->
 
-    <section id="about" class="bg-white dark:bg-gray-800">
+    <section id="about" class="text-gray-600">
         <div class="container px-6 py-8 mx-auto about-margin">
             <div class="items-center lg:flex">
                 <div class="lg:w-1/2">
@@ -110,10 +140,9 @@
                     <p class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
                         Bhaskaracharya Maths Club is the Official Maths Club of
                         <a class="font-bold text-indigo-600 dark:text-indigo-400" href="http://sggs.ac.in/"
-                            target="_blank">SGGSIE&T Nanded</a>
-                        , Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            target="_blank">SGGSIE&T Nanded</a>.
+                        We conducts various events to increase enthusiasm of Mathematics among the students.
+                        We aim to create interest of Mathematics among everyone.                        
                     </p>
 
                     <div class="flex items-center mt-6 -mx-2">
@@ -130,7 +159,7 @@
                 <div class="mt-8 lg:mt-0 lg:w-1/2">
                     <div class="flex items-center justify-center lg:justify-end">
                         <div class="max-w-lg">
-                            <img class="object-cover object-center w-full h-64 rounded-md shadow" src="Images/image.jpg"
+                            <img class="object-cover object-center w-full h-64 rounded-md shadow" src="Images/logo.png"
                                 alt="">
                         </div>
                     </div>
@@ -156,7 +185,7 @@
                     Supreme
                     Beauty</p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm text-lg">Our Slogan</h2>
+                <h2 class="text-gray-900 block-title font-bold title-font tracking-wider text-sm text-lg">Our Slogan</h2>
             </div>
         </div>
     </section>
@@ -165,52 +194,42 @@
 
     <!-- Events Section Starts Here -->
 
-    <section id="events" class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Past Events</h1>
-                <!-- <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p> -->
-            </div>
-            <div class="flex flex-wrap -m-4">
-                <div class="xl:w-1/2 md:w-1/2 p-4">
-                    <div class="border border-gray-200 p-6 rounded-lg bg-white shadow-xl">
-                        <div
-                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bhaskaracharya Maths Learners
-                            Assesment</h2>
-                        <p class="leading-relaxed text-base">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
+    <section class="container pt-3 mb-3" id="events">
+        <h2 class="h3 block-title font-bold text-center">Events</h2><br>
+        <div class="row pt-5 mt-30">
+            <div class="col-lg-4 col-sm-2 mb-30 pb-5">
+                <a class="card">
+                    <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa fa-user fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title pt-1">BMLA</h3>
+                        <p class="card-text text-sm">Bhaskaracharya Maths Learners Assesment 
+                            is an entrance test towards entering into the Bhaskaracharya Maths Club.<br><br>
+                        </p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
                     </div>
-                </div>
-                <div class="xl:w-1/2 md:w-1/2 p-4">
-                    <div class="border border-gray-200 p-6 rounded-lg bg-white shadow-xl">
-                        <div
-                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                                <circle cx="6" cy="6" r="3"></circle>
-                                <circle cx="6" cy="18" r="3"></circle>
-                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                            </svg>
-                        </div>
-                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">BMC Test</h2>
-                        <p class="leading-relaxed text-base">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-                </div>
+                </a>
             </div>
-        </div>
+            <br>
+            <div class="col-lg-4 col-sm-2 mb-30 pb-5">
+                <a class="card">
+                    <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa fa-user-circle-o fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title pt-1">BMC</h3>
+                        <p class="card-text text-sm">BMC is the Maths Test which Bhaskaracharya Maths Club conducts quarterly in a year.<br><br><br></p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-2 mb-30 pb-5">
+                <a class="card">
+                    <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><i class="fa fa-box-open fa-3x head-icon"></i></div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title pt-1">Questions Box</h3>
+                        <p class="card-text text-sm">Questions Box is not a regular Maths quiz, 
+                            it's more exciting and creative apart from regular tests. 
+                            Beat others by solving problems in less time to gain more points than others. 
+                        </p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -222,101 +241,53 @@
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
                 <h1 class="text-3xl font-bold title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
-                    asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.
-                </p>
             </div>
-            <div class="flex flex-wrap -m-4">
+            <div class="flex flex-wrap ml-4">
                 <div class="p-4 lg:w-1/2">
                     <div
-                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        class="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-center">
                         <img alt="team"
                             class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                            src="https://dummyimage.com/200x200">
+                            src="Images/rushikesh.jpg">
                         <div class="flex-grow sm:pl-8">
                             <h2 class="title-font font-medium text-lg text-gray-900">Rushikesh Bhoskar</h2>
                             <h3 class="text-gray-500 mb-3">President</h3>
-                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
-                            </p>
-                            <span class="inline-flex">
-                                <h4><a href="https://www.instagram.com/mathsclub_sggs/" target="_blank"><i
-                                            class="fab fa-instagram-square mx-2"></i></a></h4>
-                                <h4><a href="https://www.facebook.com/bhaskaracharya.mathsclub.5" target="_blank"><i
-                                            class="fab fa-facebook mx-2"></i></a></h4>
-                                <h4><a href="https://in.linkedin.com/in/bhaskaracharya-maths-club-39b1a5217"
-                                        target="_blank"><i class="fab fa-linkedin mx-2"></i></a></h4>
-                                <h4><a href="#"><i class="fab fa-github-square mx-2"></i></a></h4>
-                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="p-4 lg:w-1/2">
                     <div
-                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        class="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-center">
                         <img alt="team"
                             class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
                             src="Images/rajesh.png">
                         <div class="flex-grow sm:pl-8">
                             <h2 class="title-font font-medium text-lg text-gray-900">Rajesh Kulkarni</h2>
                             <h3 class="text-gray-500 mb-3">Co-ordinator</h3>
-                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
-                            </p>
-                            <span class="inline-flex">
-                                <h4><a href="https://www.instagram.com/imrajesh2607/" target="_blank"><i
-                                            class="fab fa-instagram-square mx-2"></i></a></h4>
-                                <h4><a href="https://www.linkedin.com/in/rajesh-kulkarni-0126ab1b1" target="_blank"><i
-                                            class="fab fa-facebook mx-2"></i></a></h4>
-                                <h4><a href="https://www.linkedin.com/in/rajesh-kulkarni-0126ab1b1" target="_blank"><i
-                                            class="fab fa-linkedin mx-2"></i></a></h4>
-                                <h4><a href="https://github.com/imrajesh2607"><i
-                                            class="fab fa-github-square mx-2"></i></a></h4>
-                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="p-4 lg:w-1/2">
                     <div
-                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        class="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-center">
                         <img alt="team"
                             class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                            src="https://dummyimage.com/204x204">
+                            src="Images/mahesh.png">
                         <div class="flex-grow sm:pl-8">
                             <h2 class="title-font font-medium text-lg text-gray-900">Mahesh Wattamwar</h2>
                             <h3 class="text-gray-500 mb-3">Web Developer</h3>
-                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
-                            </p>
-                            <span class="inline-flex">
-                                <h4><a href="https://www.instagram.com/mathsclub_sggs/" target="_blank"><i
-                                            class="fab fa-instagram-square mx-2"></i></a></h4>
-                                <h4><a href="https://www.facebook.com/bhaskaracharya.mathsclub.5" target="_blank"><i
-                                            class="fab fa-facebook mx-2"></i></a></h4>
-                                <h4><a href="https://in.linkedin.com/in/bhaskaracharya-maths-club-39b1a5217"
-                                        target="_blank"><i class="fab fa-linkedin mx-2"></i></a></h4>
-                                <h4><a href="#"><i class="fab fa-github-square mx-2"></i></a></h4>
-                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="p-4 lg:w-1/2">
                     <div
-                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        class="h-full flex sm:flex-row flex-col items-center sm:justify-center justify-center text-center sm:text-center">
                         <img alt="team"
                             class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
                             src="Images/harsh.png">
                         <div class="flex-grow sm:pl-8">
                             <h2 class="title-font font-medium text-lg text-gray-900">Harsh Kesharwani</h2>
                             <h3 class="text-gray-500 mb-3">Vice President</h3>
-                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
-                            </p>
-                            <span class="inline-flex">
-                                <h4><a href="https://www.instagram.com/mathsclub_sggs/" target="_blank"><i
-                                            class="fab fa-instagram-square mx-2"></i></a></h4>
-                                <h4><a href="https://www.facebook.com/bhaskaracharya.mathsclub.5" target="_blank"><i
-                                            class="fab fa-facebook mx-2"></i></a></h4>
-                                <h4><a href="https://in.linkedin.com/in/bhaskaracharya-maths-club-39b1a5217"
-                                        target="_blank"><i class="fab fa-linkedin mx-2"></i></a></h4>
-                                <h4><a href="#"><i class="fab fa-github-square mx-2"></i></a></h4>
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -328,7 +299,7 @@
 
     <!-- Footer Starts Here -->
 
-    <div id="contact" class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div id="contact" class="px-4 pt-16 mx-auto md:max-w-full md:px-24 lg:px-8">
         <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
             <div class="sm:col-span-2">
                 <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
@@ -345,11 +316,7 @@
                 </a>
                 <div class="mt-6 lg:max-w-sm">
                     <p class="text-sm text-gray-800">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <p class="mt-4 text-sm text-gray-800">
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        Bhaskaracharya Maths Club is the Official Maths Club of SGGSIE&T, Nanded.
                     </p>
                 </div>
             </div>
@@ -379,10 +346,6 @@
                                 class="fab fa-linkedin mx-2"></i></a></h4>
                     <h4><a href="#"><i class="fab fa-github-square mx-2"></i></a></h4>
                 </span>
-                <p class="mt-4 text-sm text-gray-500">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                </p>
             </div>
         </div>
         <div class="flex pt-5 pb-10 border-t lg:flex-col text-center">
